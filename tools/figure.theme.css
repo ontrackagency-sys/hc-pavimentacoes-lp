@@ -1,0 +1,8 @@
+.iso.hc-fig[data-theme="dark"]{
+  --anatomy-page:#1d1d1f;--anatomy-card:#1b1c1e;--anatomy-text:#b9b6ae;--anatomy-strong:#f3efe6;--anatomy-muted:#8d8a83;
+  --anatomy-paper:#1b1c1e;--anatomy-face:#2a2b2f;--anatomy-top:#3a3b40;
+  --anatomy-shade-0:#222326;--anatomy-shade-1:#2a2b2f;--anatomy-shade-2:#323338;--anatomy-shade-3:#3a3b40;
+  --anatomy-lit-top:#6a4710;--anatomy-lit-shade:#4d330c;
+  --anatomy-hi:#e9e4d8;--anatomy-mid:#a3a19b;--anatomy-lo:#6c6d71;--anatomy-faint:#46474b;--anatomy-lit:#ffa51f;
+  --anatomy-halo:#000;--anatomy-halo-opacity:.55;--anatomy-dot:#eee9dd;
+}

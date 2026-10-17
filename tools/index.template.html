@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pavimentação em bloquete, meio-fio e calçada no DF | HC Pavimentação</title>
+<meta name="description" content="Pavimentação em bloquete, meio-fio e calçada em todo o Distrito Federal. Peça seu orçamento pelo WhatsApp: diga o serviço, o endereço e a metragem aproximada.">
+<meta name="theme-color" content="#1c1d1f">
+<link rel="icon" href="assets/logo-hc.webp" type="image/webp">
+<meta property="og:title" content="HC Pavimentação: bloquete, meio-fio e calçada no DF">
+<meta property="og:description" content="Peça seu orçamento pelo WhatsApp.">
+<meta property="og:image" content="assets/logo-hc.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/*FIG_CSS*/
+:root{
+  --asfalto:#1c1d1f; --asfalto-2:#26272a; --asfalto-3:#34353a;
+  --laranja:#ffa21f; --laranja-esc:#e58a00; --laranja-txt:#995100;
+  --concreto:#e9e6df; --papel:#f6f4ef; --branco:#fff;
+  --texto:#1c1d1f; --suave:#55575b; --linha:#d5d1c7;
+  --display:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;
+  --corpo:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --gut:clamp(16px,4vw,40px);
+  --max:1160px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;font:400 17px/1.55 var(--corpo);color:var(--texto);background:var(--papel);-webkit-font-smoothing:antialiased}
+::selection{background:var(--laranja);color:var(--asfalto)}
+:focus-visible{outline:3px solid var(--laranja);outline-offset:3px;border-radius:4px}
+input,select,button{caret-color:var(--laranja-esc);font:inherit}
+html{scrollbar-color:var(--asfalto-3) var(--asfalto)}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:.98;margin:0;text-wrap:balance;text-transform:uppercase;letter-spacing:.005em}
+p{margin:0;text-wrap:pretty}
+.wrap{width:min(var(--max),100% - var(--gut)*2);margin-inline:auto}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:54px;padding:0 26px;border-radius:10px;border:0;font:700 1.12rem/1 var(--display);letter-spacing:.04em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:transform .18s var(--ease),background .18s,box-shadow .18s}
+.btn svg{width:22px;height:22px;flex:none}
+.btn-wa{background:var(--laranja);color:var(--asfalto);box-shadow:0 2px 0 #b86a00,0 8px 18px -8px #000a}
+.btn-wa:hover{background:#ffb13f;transform:translateY(-1px)}
+.btn-wa:active{transform:translateY(1px);box-shadow:0 0 0 #b86a00}
+.btn-fone{background:transparent;color:inherit;box-shadow:inset 0 0 0 2px currentColor}
+.btn-fone:hover{background:#ffffff14}
+.btn-block{width:100%}
+
+/* barra do topo */
+.topo{position:sticky;top:0;z-index:30;background:var(--branco);border-bottom:1px solid var(--linha)}
+.topo .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:68px}
+.topo img{height:58px;width:auto}
+.topo nav{display:flex;gap:10px;align-items:center}
+.topo .btn{min-height:44px;padding:0 16px;font-size:1rem}
+.topo .t-fone-txt{display:none}
+@media (min-width:640px){.topo .t-fone-txt{display:inline}}
+
+/* herói */
+.heroi{position:relative;background:var(--asfalto);color:#f3efe6;overflow:hidden;isolation:isolate}
+.heroi::before{content:"";position:absolute;inset:0;z-index:-1;opacity:.5;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='60'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.06' stroke-width='1.5'%3E%3Crect x='1' y='1' width='58' height='28' rx='2'/%3E%3Crect x='61' y='1' width='58' height='28' rx='2'/%3E%3Crect x='-29' y='31' width='58' height='28' rx='2'/%3E%3Crect x='31' y='31' width='58' height='28' rx='2'/%3E%3Crect x='91' y='31' width='58' height='28' rx='2'/%3E%3C/g%3E%3C/svg%3E");
+  mask-image:linear-gradient(105deg,transparent 28%,#000 78%)}
+.heroi .wrap{display:grid;gap:34px;padding-block:clamp(36px,6vw,76px)}
+.heroi h1{font-size:clamp(2.7rem,9.4vw,5.6rem)}
+.heroi h1 em{font-style:normal;color:var(--laranja)}
+.heroi .sub{margin-top:18px;font-size:clamp(1.05rem,2.6vw,1.28rem);color:#d9d5ca;max-width:34ch}
+.heroi .acoes{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.heroi .acoes .btn{flex:1 1 220px}
+.heroi .selo{margin-top:24px;display:flex;flex-wrap:wrap;gap:6px 22px;font:600 .9rem/1 var(--display);letter-spacing:.2em;text-transform:uppercase;color:#bdb9ae}
+.heroi .selo span::before{content:"";display:inline-block;width:8px;height:8px;margin-right:9px;background:var(--laranja);transform:translateY(-1px)}
+@media (min-width:960px){
+  .heroi .wrap{grid-template-columns:1.1fr .9fr;align-items:center;gap:56px}
+  .heroi .acoes .btn{flex:0 1 auto}
+}
+
+/* formulário */
+.cartao{background:var(--papel);color:var(--texto);border-radius:14px;padding:clamp(20px,3.5vw,30px);box-shadow:0 1px 0 #fff8 inset,0 22px 40px -18px #000c,0 4px 10px -4px #0008;scroll-margin-top:84px}
+.cartao h2{font-size:2rem;margin-bottom:6px}
+.cartao .nota{font-size:.95rem;color:var(--suave);margin-bottom:18px}
+.campo{margin-bottom:16px;border:0;padding:0;min-width:0}
+.campo>label,.campo>legend{display:block;font:700 .92rem/1.2 var(--display);letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px;padding:0;color:var(--asfalto)}
+.campo .opc{font-weight:600;color:var(--suave);letter-spacing:.04em;text-transform:none;font-family:var(--corpo)}
+.campo input[type=text],.campo select{width:100%;min-height:52px;padding:0 14px;border-radius:9px;border:1.5px solid #b9b4a8;background:var(--branco);color:var(--texto);appearance:none;-webkit-appearance:none}
+.campo select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' fill='none' stroke='%231c1d1f' stroke-width='2.2'%3E%3Cpath d='m1 1.5 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:38px}
+.campo input:focus-visible,.campo select:focus-visible{outline:3px solid var(--laranja);outline-offset:1px;border-color:var(--asfalto)}
+.campo.erro input,.campo.erro select{border-color:#b3261e;background:#fff7f6}
+.chips{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.chips input{position:absolute;opacity:0;pointer-events:none}
+.chips label{display:flex;align-items:center;justify-content:center;min-height:50px;padding:0 10px;text-align:center;border-radius:9px;border:1.5px solid #b9b4a8;background:var(--branco);font:700 1.04rem/1.05 var(--display);letter-spacing:.05em;text-transform:uppercase;cursor:pointer;transition:background .15s,border-color .15s,transform .15s var(--ease)}
+.chips label:hover{border-color:var(--asfalto)}
+.chips input:checked+label{background:var(--asfalto);border-color:var(--asfalto);color:var(--laranja)}
+.chips input:focus-visible+label{outline:3px solid var(--laranja);outline-offset:2px}
+.campo.erro .chips label{border-color:#b3261e}
+.aviso{min-height:1.4em;margin:2px 0 12px;font-weight:600;font-size:.95rem;color:#b3261e}
+.cartao .ou{margin-top:14px;text-align:center;font-size:.98rem;color:var(--suave)}
+.cartao .ou a{font-weight:700;color:var(--asfalto);text-decoration-thickness:2px;text-underline-offset:3px}
+
+/* faixa dos 3 serviços */
+.servicos{background:var(--laranja);color:var(--asfalto)}
+.servicos .wrap{display:grid}
+.servico{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;align-items:start;padding:26px 0;border-top:2px solid #1c1d1f33;text-decoration:none;position:relative}
+.servico:first-child{border-top:0}
+.servico svg.ok{width:46px;height:46px;margin-top:4px}
+.servico h3{font-size:clamp(2.4rem,8vw,3.6rem)}
+.servico p{grid-column:2;max-width:34ch;font-weight:500;color:#2a2418}
+.servico .ir{grid-column:2;margin-top:6px;font:800 1rem/1 var(--display);letter-spacing:.1em;text-transform:uppercase;display:inline-flex;gap:8px;align-items:center;border-bottom:2px solid var(--asfalto);padding-bottom:3px;justify-self:start}
+.servico:hover h3{text-decoration:underline;text-decoration-thickness:4px;text-underline-offset:6px}
+@media (min-width:860px){
+  .servicos .wrap{grid-template-columns:repeat(3,1fr)}
+  .servico{padding:40px 28px 40px 0;border-top:0;border-left:2px solid #1c1d1f33;padding-left:28px}
+  .servico:first-child{border-left:0;padding-left:0}
+}
+
+/* seção genérica */
+.sec{padding-block:clamp(52px,8vw,100px)}
+.sec h2{font-size:clamp(2.2rem,6.4vw,4rem)}
+.sec .lead{margin-top:14px;font-size:1.15rem;color:var(--suave);max-width:46ch}
+.sec-concreto{background:var(--concreto)}
+
+/* camadas (Anatomy) */
+.camadas .wrap{display:grid;gap:30px}
+.camadas .hc-fig{min-width:0}
+.hc-fig .iso-figure{margin:0}
+.hc-fig .iso-plate{border-radius:14px}
+.hc-fig .iso-legend,.hc-fig .iso-key,.hc-fig .iso-caption{color:#55575b}
+.hc-layers{list-style:none;margin:22px 0 0;padding:0;display:grid;align-content:start}
+@media (min-width:960px){.hc-layers{margin-top:0}}
+.hc-layers li{border-top:1.5px solid var(--linha)}
+.hc-layers li:last-child{border-bottom:1.5px solid var(--linha)}
+.hc-layers button{all:unset;box-sizing:border-box;display:grid;grid-template-columns:44px 1fr;gap:14px;width:100%;padding:16px 10px;cursor:pointer;color:var(--texto);transition:background .15s}
+.hc-layers button:hover{background:#00000008}
+.hc-layers button[aria-pressed="true"]{background:var(--asfalto);color:#f3efe6}
+.hc-layers button:focus-visible{outline:3px solid var(--laranja);outline-offset:-3px}
+.ly-n{font:800 2.2rem/1 var(--display);color:var(--laranja-txt)}
+.hc-layers button[aria-pressed="true"] .ly-n{color:var(--laranja)}
+.ly-t{display:grid;gap:3px}
+.ly-t strong{font:800 1.4rem/1.05 var(--display);text-transform:uppercase;letter-spacing:.02em}
+.ly-t span{font-size:.98rem;color:var(--suave)}
+.hc-layers button[aria-pressed="true"] .ly-t span{color:#d4d0c5}
+@media (min-width:960px){.camadas .wrap{grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}}
+
+/* passos */
+.passos ol{list-style:none;margin:34px 0 0;padding:0;display:grid;gap:0;counter-reset:p}
+.passos li{display:grid;grid-template-columns:70px 1fr;gap:6px 16px;padding:22px 0;border-top:1.5px solid var(--linha)}
+.passos li:last-child{border-bottom:1.5px solid var(--linha)}
+.passos .n{font:800 4rem/.85 var(--display);color:var(--laranja-txt)}
+.passos h3{font-size:1.9rem}
+.passos li p{grid-column:2;color:var(--suave);max-width:48ch}
+@media (min-width:860px){
+  .passos ol{grid-template-columns:repeat(3,1fr);gap:34px}
+  .passos li{grid-template-columns:1fr;border-top:2px solid var(--asfalto);border-bottom:0!important;padding-top:18px}
+  .passos li p{grid-column:1}
+}
+
+/* região */
+.regiao{background:var(--asfalto);color:#f3efe6}
+.regiao .lead{color:#c8c4b9}
+.regiao ul{list-style:none;margin:30px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.regiao li{padding:9px 14px;border-radius:8px;background:var(--asfalto-2);font:600 1.02rem/1 var(--display);letter-spacing:.06em;text-transform:uppercase;color:#e6e2d8}
+.regiao .fim{margin-top:26px;color:#c8c4b9}
+.regiao .fim a{color:var(--laranja);font-weight:700}
+
+/* obras (só aparece quando houver foto em assets/) */
+.obras[hidden]{display:none}
+.galeria{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:28px}
+.galeria img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px;background:var(--concreto)}
+@media (min-width:860px){.galeria{grid-template-columns:repeat(3,1fr)}}
+
+/* faq */
+.faq details{border-top:1.5px solid var(--linha)}
+.faq details:last-of-type{border-bottom:1.5px solid var(--linha)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:16px;align-items:center;padding:20px 0;font:800 1.45rem/1.1 var(--display);text-transform:uppercase;letter-spacing:.02em}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";flex:none;width:14px;height:14px;border-right:3px solid var(--laranja-esc);border-bottom:3px solid var(--laranja-esc);transform:rotate(45deg);transition:transform .25s var(--ease)}
+.faq details[open] summary::after{transform:rotate(-135deg)}
+.faq details p{padding:0 0 22px;max-width:60ch;color:var(--suave)}
+.faq .corpo{margin-top:30px}
+
+/* fechamento */
+.fecha{background:var(--laranja);color:var(--asfalto);text-align:left}
+.fecha .wrap{display:grid;gap:24px;padding-block:clamp(48px,7vw,84px)}
+.fecha h2{font-size:clamp(2.4rem,7vw,4.6rem)}
+.fecha p{margin-top:16px;font-size:1.15rem;max-width:44ch;color:#2a2418;font-weight:500}
+.fecha .acoes{display:flex;flex-wrap:wrap;gap:12px}
+.fecha .btn-wa{background:var(--asfalto);color:var(--laranja);box-shadow:0 2px 0 #000,0 10px 20px -10px #0009}
+.fecha .btn-wa:hover{background:#2b2c30}
+.fecha .btn-fone{color:var(--asfalto)}
+.fecha .btn-fone:hover{background:#1c1d1f14}
+.fecha .acoes .btn{flex:1 1 230px}
+@media (min-width:860px){.fecha .wrap{grid-template-columns:1.2fr auto;align-items:end}.fecha .acoes .btn{flex:0 0 auto}.fecha .acoes{flex-direction:column;align-items:stretch}}
+
+.rodape{background:var(--asfalto);color:#bdb9ae;font-size:.95rem}
+.rodape .wrap{display:flex;flex-wrap:wrap;gap:14px 36px;align-items:center;justify-content:space-between;padding-block:28px}
+.rodape img{height:54px;width:auto;background:#fff;border-radius:8px;padding:4px 8px}
+.rodape .lema{font:600 .95rem/1.3 var(--display);letter-spacing:.2em;text-transform:uppercase}
+
+/* barra fixa no celular */
+.fixa{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:#1c1d1ff2;backdrop-filter:blur(8px);transform:translateY(110%);transition:transform .3s var(--ease)}
+.fixa.on{transform:none}
+.fixa .btn{flex:1;min-height:50px;padding:0 10px;font-size:1.02rem}
+.fixa .btn-fone{color:#f3efe6}
+@media (min-width:860px){.fixa{display:none}}
+body{padding-bottom:0}
+@media (max-width:859px){.rodape{padding-bottom:72px}}
+</style>
+</head>
+<body>
+
+<header class="topo">
+  <div class="wrap">
+    <a href="#orcamento" aria-label="HC Pavimentação, ir para o orçamento"><img src="assets/logo-hc.webp" alt="HC Pavimentação — infraestrutura que move o amanhã" width="84" height="58"></a>
+    <nav aria-label="Contato">
+      <a class="btn btn-fone" href="tel:+5561982887450" data-track="fone" style="color:var(--asfalto)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+        <span class="t-fone-txt">(61) 98288-7450</span><span class="sr" style="position:absolute;left:-9999px">Ligar</span>
+      </a>
+      <a class="btn btn-wa" href="#orcamento" data-go="form">Pedir orçamento</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="heroi" id="topo">
+  <div class="wrap">
+    <div>
+      <h1>Pavimentação em <em>bloquete</em>, <span style="white-space:nowrap">meio-fio</span> e calçada no DF</h1>
+      <p class="sub">Peça seu orçamento pelo WhatsApp. Diga o serviço, o endereço e a metragem aproximada.</p>
+      <div class="acoes">
+        <a class="btn btn-wa" href="#" data-wa="geral" data-track="whatsapp">
+          <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 3C9 3 3.4 8.6 3.4 15.5c0 2.4.7 4.7 1.9 6.6L3 29l7.1-2.2a12.6 12.6 0 0 0 5.9 1.5c7 0 12.6-5.6 12.6-12.5S23 3 16 3zm0 22.6c-1.9 0-3.700-.5-5.300-1.500l-.4-.2-4.200 1.300 1.400-4.100-.3-.4a10.300 10.300 0 0 1-1.600-5.500C5.600 9.700 10.300 5.100 16 5.100s10.400 4.600 10.400 10.400S21.700 25.600 16 25.600zm5.700-7.700c-.3-.2-1.900-.9-2.200-1s-.5-.2-.7.200-.8 1-1 1.200-.4.200-.7.100a8.400 8.400 0 0 1-4.200-3.700c-.3-.6.300-.5.900-1.700.1-.2 0-.4 0-.5l-1-2.300c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.100-.8.400s-1 1-1 2.400 1 2.800 1.200 3 2 3.200 5 4.400c1.800.8 2.600.8 3.500.7.600-.1 1.900-.8 2.200-1.600.3-.8.300-1.400.2-1.600-.1-.2-.3-.2-.6-.4z"/></svg>
+          Chamar no WhatsApp
+        </a>
+        <a class="btn btn-fone" href="tel:+5561982887450" data-track="fone">Ligar para o Caio</a>
+      </div>
+      <div class="selo" aria-label="Valores"><span>Qualidade</span><span>Confiança</span><span>Resultados</span></div>
+    </div>
+
+    <form class="cartao" id="orcamento" novalidate>
+      <h2>Pedir orçamento</h2>
+      <p class="nota">Três respostas rápidas. Você cai no WhatsApp do Caio com a mensagem pronta.</p>
+
+      <div class="campo" data-campo="nome">
+        <label for="f-nome">Seu nome</label>
+        <input id="f-nome" name="nome" type="text" autocomplete="given-name" placeholder="Como podemos te chamar?">
+      </div>
+
+      <fieldset class="campo" data-campo="servico">
+        <legend>O que você precisa?</legend>
+        <div class="chips">
+          <input type="radio" name="servico" id="s-bloquete" value="Bloquete"><label for="s-bloquete">Bloquete</label>
+          <input type="radio" name="servico" id="s-meiofio" value="Meio-fio"><label for="s-meiofio">Meio-fio</label>
+          <input type="radio" name="servico" id="s-calcada" value="Calçada"><label for="s-calcada">Calçada</label>
+          <input type="radio" name="servico" id="s-varios" value="Mais de um serviço"><label for="s-varios">Mais de um</label>
+        </div>
+      </fieldset>
+
+      <div class="campo" data-campo="regiao">
+        <label for="f-regiao">Onde fica a obra?</label>
+        <select id="f-regiao" name="regiao">
+          <option value="">Escolha a região do DF</option>
+          <!--REGIOES_OPT-->
+          <option>Outra região do DF</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="f-area">Metragem aproximada <span class="opc">(se souber)</span></label>
+        <input id="f-area" name="area" type="text" inputmode="text" placeholder="Ex.: 80 m² ou 25 metros de meio-fio">
+      </div>
+
+      <p class="aviso" id="aviso" role="alert" aria-live="polite"></p>
+      <button class="btn btn-wa btn-block" type="submit" data-track="form">
+        <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 3C9 3 3.400 8.600 3.400 15.500c0 2.400.7 4.700 1.900 6.600L3 29l7.100-2.200a12.600 12.600 0 0 0 5.900 1.500c7 0 12.600-5.600 12.600-12.500S23 3 16 3zm0 22.600c-1.900 0-3.700-.5-5.300-1.500l-.4-.2-4.200 1.300 1.400-4.100-.3-.4a10.300 10.300 0 0 1-1.600-5.500C5.600 9.700 10.300 5.100 16 5.100s10.400 4.600 10.400 10.400S21.700 25.600 16 25.600zm5.700-7.700c-.3-.2-1.900-.9-2.200-1s-.5-.2-.7.200-.8 1-1 1.200-.4.200-.7.100a8.400 8.400 0 0 1-4.200-3.700c-.3-.6.300-.5.900-1.700.1-.2 0-.4 0-.5l-1-2.300c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.100-.8.400s-1 1-1 2.400 1 2.800 1.200 3 2 3.200 5 4.400c1.800.8 2.600.8 3.500.7.600-.1 1.900-.8 2.200-1.600.3-.8.300-1.400.2-1.600-.1-.2-.3-.2-.6-.4z"/></svg>
+        Enviar pelo WhatsApp
+      </button>
+      <p class="ou">Prefere falar agora? <a href="tel:+5561982887450" data-track="fone">(61) 98288-7450</a></p>
+    </form>
+  </div>
+</section>
+
+<section class="servicos" aria-label="Serviços">
+  <div class="wrap">
+    <a class="servico" href="#orcamento" data-servico="s-bloquete">
+      <svg class="ok" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="9" width="32" height="32" rx="4"/><path d="m14 24 8 9L44 8"/></svg>
+      <h3>Bloquete</h3>
+      <p>Piso intertravado para rua, garagem, estacionamento, condomínio e área externa.</p>
+      <span class="ir">Orçar bloquete →</span>
+    </a>
+    <a class="servico" href="#orcamento" data-servico="s-meiofio">
+      <svg class="ok" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="9" width="32" height="32" rx="4"/><path d="m14 24 8 9L44 8"/></svg>
+      <h3>Meio-fio</h3>
+      <p>Define a borda da via e da calçada e segura o piso no lugar.</p>
+      <span class="ir">Orçar meio-fio →</span>
+    </a>
+    <a class="servico" href="#orcamento" data-servico="s-calcada">
+      <svg class="ok" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="9" width="32" height="32" rx="4"/><path d="m14 24 8 9L44 8"/></svg>
+      <h3>Calçada</h3>
+      <p>Passeio firme, nivelado e seguro para quem anda a pé.</p>
+      <span class="ir">Orçar calçada →</span>
+    </a>
+  </div>
+</section>
+
+<section class="sec sec-concreto camadas" id="camadas">
+  <div class="wrap">
+    <div>
+      <h2>Bloquete bom começa debaixo da terra</h2>
+      <p class="lead">Piso que afunda ou desnivela quase sempre falhou por baixo, onde ninguém vê. Por isso a obra é feita camada por camada.</p>
+      <!--FIG-->
+    </div>
+    <div id="lista-camadas-slot"></div>
+  </div>
+</section>
+
+<section class="sec passos" id="como">
+  <div class="wrap">
+    <h2>Como pedir seu orçamento</h2>
+    <ol>
+      <li><span class="n">1</span><h3>Você manda os dados</h3><p>Serviço, região e metragem aproximada. Se tiver uma foto do local, melhor.</p></li>
+      <li><span class="n">2</span><h3>A gente responde</h3><p>O Caio chama você no WhatsApp para alinhar o que a obra pede e passar o orçamento.</p></li>
+      <li><span class="n">3</span><h3>Você aprova e a obra começa</h3><p>Combinado o valor e a data, a equipe da HC vai ao local.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec sec-concreto obras" id="obras" hidden>
+  <div class="wrap">
+    <h2>Obras da HC</h2>
+    <div class="galeria" id="galeria"></div>
+  </div>
+</section>
+
+<section class="sec regiao" id="onde">
+  <div class="wrap">
+    <h2>Atendemos todo o Distrito Federal</h2>
+    <p class="lead">Pavimentação em bloquete, meio-fio e calçada nas regiões administrativas do DF.</p>
+    <ul><!--REGIOES_LI--></ul>
+    <p class="fim">Não viu a sua região? <a href="#" data-wa="geral" data-track="whatsapp">Chame no WhatsApp</a> e a gente confirma.</p>
+  </div>
+</section>
+
+<section class="sec faq" id="duvidas">
+  <div class="wrap">
+    <h2>Dúvidas comuns</h2>
+    <div class="corpo">
+      <details><summary>Quanto custa pavimentar com bloquete?</summary><p>Depende da metragem, do estado do terreno, do tipo de bloco e do acesso à obra. Por isso o valor sai em orçamento, não em tabela. Mande a metragem e uma foto do local e a gente calcula.</p></details>
+      <details><summary>Qual a diferença entre bloquete, meio-fio e calçada?</summary><p>Bloquete é o piso de blocos intertravados. Meio-fio é a peça de concreto que marca a borda e segura o piso. Calçada é o passeio de pedestres. Muitas obras juntam os três.</p></details>
+      <details><summary>Posso pedir só o meio-fio ou só a calçada?</summary><p>Pode. Escolha o serviço no formulário, ou marque “Mais de um” se a obra juntar mais de um.</p></details>
+      <details><summary>Preciso saber a metragem exata?</summary><p>Não. Uma medida aproximada já ajuda. Se não souber, diga o endereço e mande fotos pelo WhatsApp.</p></details>
+      <details><summary>Vocês atendem a minha região?</summary><p>A HC atua em todo o Distrito Federal. Se tiver dúvida sobre a sua localidade, pergunte no WhatsApp.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="fecha" id="fechamento">
+  <div class="wrap">
+    <div>
+      <h2>Mande a metragem e uma foto do local</h2>
+      <p>Obras mais fortes, cidades melhores. Fale com o Caio e peça seu orçamento.</p>
+    </div>
+    <div class="acoes">
+      <a class="btn btn-wa" href="#" data-wa="geral" data-track="whatsapp">Chamar no WhatsApp</a>
+      <a class="btn btn-fone" href="tel:+5561982887450" data-track="fone">Ligar (61) 98288-7450</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <img src="assets/logo-hc.webp" alt="HC Pavimentação" width="78" height="54">
+    <span class="lema">Pavimentando um futuro melhor</span>
+    <span>HC Pavimentação · Distrito Federal · <a href="tel:+5561982887450">(61) 98288-7450</a></span>
+  </div>
+</footer>
+
+<div class="fixa" id="fixa" aria-label="Contato rápido">
+  <a class="btn btn-fone" href="tel:+5561982887450" data-track="fone">Ligar</a>
+  <a class="btn btn-wa" href="#" data-wa="geral" data-track="whatsapp">WhatsApp</a>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  var CONFIG = {
+    WHATSAPP: "5561982887450",
+    CONTATO: "Caio",
+    // Preencher quando as contas estiverem prontas. Vazio = nenhuma tag carrega.
+    GA4_ID: "",                  // ex.: "G-XXXXXXX"
+    AW_ID: "",                   // ex.: "AW-123456789"
+    AW_LABEL_WHATSAPP: "",       // rótulo da conversão "clique no WhatsApp"
+    AW_LABEL_FONE: "",           // rótulo da conversão "clique para ligar"
+    AW_LABEL_FORM: "",           // rótulo da conversão "formulário enviado"
+    META_PIXEL_ID: ""
+  };
+
+  /* ---------- tags (só carregam se houver ID) ---------- */
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { window.dataLayer.push(arguments); }
+  var gtagId = CONFIG.GA4_ID || CONFIG.AW_ID;
+  if (gtagId) {
+    var s = document.createElement("script"); s.async = true;
+    s.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(gtagId);
+    document.head.appendChild(s);
+    gtag("js", new Date());
+    if (CONFIG.GA4_ID) gtag("config", CONFIG.GA4_ID);
+    if (CONFIG.AW_ID) gtag("config", CONFIG.AW_ID);
+  }
+  if (CONFIG.META_PIXEL_ID) {
+    !function (f, b, e, v, n, t, s) { if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); }; if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = "2.0"; n.queue = []; t = b.createElement(e); t.async = !0; t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+    fbq("init", CONFIG.META_PIXEL_ID); fbq("track", "PageView");
+  }
+  function conv(tipo) {
+    var label = { whatsapp: CONFIG.AW_LABEL_WHATSAPP, fone: CONFIG.AW_LABEL_FONE, form: CONFIG.AW_LABEL_FORM }[tipo];
+    window.dataLayer.push({ event: "lead_" + tipo });
+    if (CONFIG.AW_ID && label) gtag("event", "conversion", { send_to: CONFIG.AW_ID + "/" + label });
+    if (CONFIG.GA4_ID) gtag("event", "generate_lead", { metodo: tipo });
+    if (window.fbq) fbq("track", "Contact", { metodo: tipo });
+  }
+
+  /* ---------- WhatsApp ---------- */
+  function waUrl(texto) { return "https://wa.me/" + CONFIG.WHATSAPP + "?text=" + encodeURIComponent(texto); }
+  var geral = "Olá, " + CONFIG.CONTATO + "! Vim pelo site da HC Pavimentação e quero pedir um orçamento.";
+  document.querySelectorAll("[data-wa=geral]").forEach(function (a) { a.href = waUrl(geral); a.target = "_blank"; a.rel = "noopener"; });
+  document.querySelectorAll("[data-track]").forEach(function (el) {
+    if (el.tagName === "BUTTON") return;
+    el.addEventListener("click", function () { conv(el.dataset.track); });
+  });
+
+  /* ---------- botões dos serviços já marcam a opção no formulário ---------- */
+  document.querySelectorAll("[data-servico]").forEach(function (a) {
+    a.addEventListener("click", function () {
+      var r = document.getElementById(a.dataset.servico); if (r) { r.checked = true; limpar("servico"); }
+      setTimeout(function () { document.getElementById("f-nome").focus({ preventScroll: true }); }, 450);
+    });
+  });
+  document.querySelectorAll("[data-go=form]").forEach(function (a) {
+    a.addEventListener("click", function () { setTimeout(function () { document.getElementById("f-nome").focus({ preventScroll: true }); }, 450); });
+  });
+
+  /* ---------- formulário: nunca trava calado ---------- */
+  var form = document.getElementById("orcamento");
+  var aviso = document.getElementById("aviso");
+  function limpar(c) { var el = form.querySelector('[data-campo="' + c + '"]'); if (el) el.classList.remove("erro"); aviso.textContent = ""; }
+  form.addEventListener("input", function (e) { var c = e.target.closest("[data-campo]"); if (c) limpar(c.dataset.campo); });
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var d = {
+      nome: form.nome.value.trim(),
+      servico: (form.querySelector('input[name=servico]:checked') || {}).value || "",
+      regiao: form.regiao.value,
+      area: form.area.value.trim()
+    };
+    var faltam = [];
+    if (!d.nome) faltam.push(["nome", "seu nome"]);
+    if (!d.servico) faltam.push(["servico", "o serviço"]);
+    if (!d.regiao) faltam.push(["regiao", "a região"]);
+    form.querySelectorAll(".erro").forEach(function (el) { el.classList.remove("erro"); });
+    if (faltam.length) {
+      faltam.forEach(function (f) { form.querySelector('[data-campo="' + f[0] + '"]').classList.add("erro"); });
+      aviso.textContent = "Falta responder: " + faltam.map(function (f) { return f[1]; }).join(", ") + ".";
+      var alvo = form.querySelector('[data-campo="' + faltam[0][0] + '"]').querySelector("input,select");
+      if (alvo) alvo.focus();
+      return;
+    }
+    var msg = "Olá, " + CONFIG.CONTATO + "! Aqui é " + d.nome + ". Quero um orçamento de " + d.servico.toLowerCase() +
+      " em " + d.regiao + "." + (d.area ? " Metragem aproximada: " + d.area + "." : "") + " Vim pelo site da HC Pavimentação.";
+    conv("form");
+    window.open(waUrl(msg), "_blank", "noopener");
+    aviso.style.color = "#1c1d1f";
+    aviso.textContent = "Abrimos o WhatsApp. Se não abriu, toque em “Chamar no WhatsApp”.";
+  });
+
+  /* ---------- barra fixa do celular: aparece quando o formulário sai de vista ---------- */
+  var fixa = document.getElementById("fixa");
+  if ("IntersectionObserver" in window) {
+    new IntersectionObserver(function (es) { fixa.classList.toggle("on", !es[0].isIntersecting); }, { threshold: 0.05 }).observe(form);
+  }
+
+  /* ---------- galeria: só aparece quando existirem fotos em assets/obra-N.jpg ---------- */
+  var secObras = document.getElementById("obras"), gal = document.getElementById("galeria"), achou = 0;
+  for (var i = 1; i <= 6; i++) (function (n) {
+    var img = new Image();
+    img.onload = function () { achou++; img.alt = "Obra de pavimentação da HC " + n; img.loading = "lazy"; gal.appendChild(img); secObras.hidden = false; };
+    img.src = "assets/obra-" + n + ".jpg";
+  })(i);
+
+  /* ---------- lista de camadas da figura vai para a coluna ao lado no desktop ---------- */
+  var lista = document.querySelector(".hc-layers"), slot = document.getElementById("lista-camadas-slot"), fig = document.querySelector(".hc-fig");
+  function posicionar() {
+    var wide = matchMedia("(min-width:960px)").matches;
+    if (wide && lista.parentNode !== slot) slot.appendChild(lista);
+    if (!wide && lista.parentNode !== fig) fig.appendChild(lista);
+  }
+  posicionar(); matchMedia("(min-width:960px)").addEventListener("change", posicionar);
+})();
+</script>
+</body>
+</html>
