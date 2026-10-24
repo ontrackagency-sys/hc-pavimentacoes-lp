@@ -1,0 +1,9 @@
+# GitHub Pages (Jekyll). O repositorio inteiro e a raiz do site: sem esta lista,
+# README, prompts e tools/ ficam publicados junto da LP.
+# Atencao: com um arquivo .nojekyll na raiz o Jekyll nao roda e esta lista
+# deixa de valer (tudo volta a ser publicado).
+exclude:
+  - README.md
+  - PROMPTS-CHATGPT.md
+  - tools
+  - vercel.json
